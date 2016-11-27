@@ -28,13 +28,13 @@
         <span class="icon-bar"></span>
       </button>
       <!-- ★★★★下記の#を後ほど正しいURLに変更 -->
-      <a class="navbar-brand" href="/">My blog</a>
+      <div class="navbar-brand"><%= link_to "My blog",root_path %></div>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <!-- ★★★★下記の#を後ほど正しいURLに変更 -->
-        <li><a href="/posts/new">投稿する</a></li>
+        <li><%= link_to "投稿する", new_post_path %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
