@@ -6,11 +6,10 @@
             <p>カテゴリ：<%= post.category %></p>
             <p>作成日：<%= post.created_at %></p>
             <p><%= truncate(post.body, length: 50) %></p>
-            <p><%= link_to "続きを読む", post, class: "btn btn_default" %></P>
+            <p><%= link_to "続きを読む", post, class: "btn btn_default" %></p>
         </div>
     <% end %>
 </div>
-
 <div class = "col-md-4">
     <div class = "thumbnail">
         <%= image_tag Author.first.image_url, alt: "著者イメージ" %>
@@ -22,10 +21,11 @@
     </div>
     <div class = "list-group">
         <% @new_posts.each_with_index do |post,index| %>
-        <% if index >= 5
-            break
-        end
-        %>
-        <%= link_to post.title, post, class: "list-group-item" %>
+            <% if index >= 5
+                break
+            end
+            %>
+            <%= link_to post.title, post, class: "list-group-item" %>
+        <% end %>
     </div>
 </div>
