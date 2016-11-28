@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+.navbar-cstm {
+    color: #FFFFFF;
+    background-color: blue;
+}
